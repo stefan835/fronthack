@@ -7,7 +7,7 @@
 */
 
 :root {
-  --designs-width: 1915px;
+  --designs-width: 1500px;
   --gray-dark: #242424;
   --gray-light: #3d3d3d;
 }
@@ -143,3 +143,4 @@
 /* Modifiers for each html page created by `fronthack design` command. */
 
   .show-designs .designs--index, .show-code-designs .designs--index { background-image: url('../designs/test-design.jpg'); }
+  .show-designs .designs--index, .show-code-designs .designs--index { background-image: url('../designs/33.jpg'); }
