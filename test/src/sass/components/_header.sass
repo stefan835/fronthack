@@ -1,0 +1,77 @@
+// Header
+//
+// Main page header
+
+
+// Block
+// --------------------------------------------------
+// .header
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  color: $almost-white
+  min-height: 70px
+  background-color: $dark-blue
+  padding: 0 7% 0 5%
+
+// Elements
+// --------------------------------------------------
+// .header__element
+
+.header__contact
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+.header__user-panel
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.header__icon
+  padding: 0 10px
+
+.user-panel__search-bar
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 5px 10px
+
+.search-bar__input
+  background-color: $blue
+  padding: 0 25px
+  color: $almost-white
+
+.search-bar__input::placeholder
+  color: $almost-white
+
+.search-bar__input:focus
+  border-color: $gray-lightest
+
+.user-panel__btn
+  padding: 0 15px
+  border: none
+  color: $almost-white
+  background-color: $blue
+  border-radius: 0
+  min-height: 40px
+  line-height: 40px
+
+.user-panel__btn:hover
+  background-color: $blue
+
+// Modifiers
+// --------------------------------------------------
+// .header--modifier
+
+.header__contact--tel
+  display: flex
+  justify-content: space-around
+  padding: 10px 30px
+
+.header__contact--email
+  display: flex
+  justify-content: space-around
+  padding: 10px 30px
