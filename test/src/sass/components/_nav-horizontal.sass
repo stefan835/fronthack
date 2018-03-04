@@ -8,7 +8,7 @@
 .nav-horizontal
   font-size: 14px
   line-height: 24px
-
+  padding: 30px 0
 
 // Elements
 // --------------------------------------------------
@@ -16,12 +16,24 @@
   display: block
   padding: 15px 0
   text-align: center
+  color: $almost-white
   +breakpoint(desktop)
     display: inline-block
-    padding: 38px 0
+    padding: 5px 25px
     & + &
-      margin-left: 37px
+      margin-left: 5px
   &:hover
-    color: $brand-primary
+    color: $gray-base
   img
     vertical-align: middle
+  &:visited
+    text-decoration: none
+
+// Modifiers
+// --------------------------------------------------
+.nav-horizontal__link--active
+  background-color: $light-blue
+  color: $gray-base
+  border: 1px $almost-white-translucent solid
+
+
