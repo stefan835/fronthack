@@ -5,6 +5,15 @@
 .layout-section
   min-height: 65vh
 
+.layout-section__tiles
+  display: flex
+  padding: 0 auto 50px
+
+.layout-section__tile
+  background-color: $almost-white
+  margin: auto 30px
+  padding: 15px
+
 .layout-section--first
   background: url("../../images/main-background.jpg")
   background-size: cover
@@ -15,3 +24,10 @@
   display: flex
   flex-direction: row
   justify-content: space-between
+
+.layout-section--third
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  background-color: $gray-lighter
+  min-height: 62vh
