@@ -13,7 +13,6 @@
   flex: 1
   justify-content: space-around
 
-
 // Elements
 // --------------------------------------------------
 // .tiles__element
@@ -28,25 +27,31 @@
   align-items: center
   position: relative
   box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.2)
+  &:before
+    position: absolute
+    left: 0
+    top: 0
+    content: ""
+    height: 30%
+    border-left: solid $brand-primary
+    transform: rotate(-50deg)
+    transform-origin: top left
+    opacity: 0
+    transition: opacity 300ms
+  &:after
+    position: absolute
+    right: 0
+    top: 0
+    content: ""
+    height: 30%
+    border-left: solid $brand-primary
+    transform: rotate(50deg)
+    transform-origin: top right
+    opacity: 0
+    transition: opacity 300ms
   &:hover
-    &:before
-      position: absolute
-      left: 0
-      top: 0
-      content: ""
-      height: 30%
-      border-left: solid $brand-primary
-      transform: rotate(-45deg)
-      transform-origin: top left
-    &:after
-      position: absolute
-      right: 0
-      top: 0
-      content: ""
-      height: 30%
-      border-left: solid $brand-primary
-      transform: rotate(45deg)
-      transform-origin: top right
+    &:after, &:before
+      opacity: 1
 
 .tiles__icon
   color: $brand-primary
