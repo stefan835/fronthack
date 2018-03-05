@@ -9,7 +9,7 @@
   position: relative
   padding-bottom: 40px
   margin: 0
-  color: $almost-white
+  color: $gray-base
 
 .block__content
   +clearfix()
@@ -17,8 +17,21 @@
 // Modifiers
 // --------------------------------------------------
 
+.block__title--white
+  color: $almost-white
+
 .block__content--strong
     font-weight: $bold
 
 .block__content--first-letter
   font-size: 30px
+
+.block__content--justified
+  text-align: justify
+
+.block--aligned-left
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 15px
+    flex: 0.7
