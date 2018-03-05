@@ -26,10 +26,31 @@
   flex-direction: column
   justify-content: space-around
   align-items: center
+  position: relative
+  box-shadow: 0 20px 25px -10px rgba(0, 0, 0, 0.2)
+  &:hover
+    &:before
+      position: absolute
+      left: 0
+      top: 0
+      content: ""
+      height: 30%
+      border-left: solid $brand-primary
+      transform: rotate(-45deg)
+      transform-origin: top left
+    &:after
+      position: absolute
+      right: 0
+      top: 0
+      content: ""
+      height: 30%
+      border-left: solid $brand-primary
+      transform: rotate(45deg)
+      transform-origin: top right
 
 .tiles__icon
   color: $brand-primary
-  font-size: 40px
+  font-size: 26px
   border-radius: 50%
   border: solid 2px $brand-primary-light
   padding: 30px
