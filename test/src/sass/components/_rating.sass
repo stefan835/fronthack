@@ -8,7 +8,10 @@
 // Block
 // --------------------------------------------------
 // .rating
-
+.rating
+  display: flex
+  flex-direction: column
+  align-items: flex-end
 
 // Elements
 // --------------------------------------------------
@@ -37,4 +40,11 @@
   .rating__dot:nth-last-of-type(3),
   .rating__dot:nth-last-of-type(2),
   .rating__dot:nth-last-of-type(1)
+    background-color: $brand-primary
+
+.rating--4
+  .rating__dot:nth-last-of-type(5),
+  .rating__dot:nth-last-of-type(4),
+  .rating__dot:nth-last-of-type(3),
+  .rating__dot:nth-last-of-type(2)
     background-color: $brand-primary
