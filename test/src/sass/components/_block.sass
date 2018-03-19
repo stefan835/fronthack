@@ -48,3 +48,10 @@
 
 .block__title--no-padding
   padding-bottom: 0
+
+.block__title--line
+  &:after
+    content: "XXXXXXXXXXX"
+    color: transparent
+    font-size: $font-size-large
+    text-decoration: line-through $brand-primary
